@@ -22,8 +22,8 @@ public class PetController {
         return petService.createPets();
     }
 
-    @GetMapping("/list")
-    public List<Pet> listPets() {
+    @GetMapping("")
+    public List<Pet> getPets() {
         return petService.listPets();
     }
 }
