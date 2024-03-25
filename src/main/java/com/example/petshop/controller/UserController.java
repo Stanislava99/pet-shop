@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
     @Autowired
     private UserService userService;
 
@@ -24,10 +25,5 @@ public class UserController {
     @GetMapping("/list")
     public List<User> listUsers() {
         return userService.listUsers();
-    }
-
-    @PostMapping("/buy")
-    public String buyPet() {
-        return userService.buyPets();
     }
 }
