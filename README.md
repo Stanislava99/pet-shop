@@ -7,6 +7,7 @@ Welcome to the Pet Shop Project! This project is designed to manage pets and use
 - [Technologies Used](#technologies-used)
 - [Setup](#setup)
 - [Usage](#usage)
+  - [Endpoints](#endpoints)
 - [Tests](#tests)
 - [Contributing](#contributing)
 - [License](#license)
@@ -40,13 +41,21 @@ Welcome to the Pet Shop Project! This project is designed to manage pets and use
 - You can also buy pets through the appropriate endpoint.
 - View the purchase history to see details of successful and unsuccessful purchases.
 
+### Endpoints
+
+#### Users
+- **GET /users**: Retrieve all users.
+- **POST /users/create**: Create a list of random  users.
+
+#### Pets
+- **GET /pets**: Retrieve all pets.
+- **POST /pets/create**: Create a list of random pets.
+
+#### Purchases
+- **POST /buy**: Buy pets for users.
+- **GET /buy/history**: Print history log of purchases.
+
 ## Tests
 - Unit tests are provided to ensure the functionality of the service classes.
 - Run the tests using Maven: `mvn test`.
 - Mockito is used for mocking dependencies in the tests.
-
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or create a pull request.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
